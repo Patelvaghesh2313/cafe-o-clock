@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe O'Clock - Your Perfect Break Awaits</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>Cafe O'Clock ☕</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#events" class="nav-link">Events</a></li>
+                <li><a href="#announcements" class="nav-link">News</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to Cafe O'Clock</h1>
+            <p class="hero-subtitle">Where Every Hour is the Perfect Time for Great Food & Drinks</p>
+            <a href="#menu" class="btn btn-primary">Explore Our Menu</a>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="arrow-down"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Cafe O'Clock</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="lead">Your neighborhood destination for unforgettable flavors and moments.</p>
+                    <p>At Cafe O'Clock, we believe that any time is the perfect time to treat yourself. From our signature thick shakes to mouthwatering burgers, every item on our menu is crafted with love and the finest ingredients.</p>
+                    <p>Whether you're craving something sweet, savory, or refreshing, we've got you covered. Come in, relax, and let us serve you happiness in every bite and sip!</p>
+                </div>
+                <div class="about-features">
+                    <div class="feature">
+                        <div class="feature-icon">🍹</div>
+                        <h3>Fresh & Quality</h3>
+                        <p>Only the best ingredients</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Quick Service</h3>
+                        <p>Fast without compromise</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">❤️</div>
+                        <h3>Made with Love</h3>
+                        <p>Every item is special</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Menu</h2>
+                <div class="underline"></div>
+                <p class="section-subtitle">Discover our delicious offerings with detailed pricing</p>
+            </div>
+
+            <!-- Menu Categories -->
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="all">All</button>
+                <button class="category-btn" data-category="shakes">Shakes</button>
+                <button class="category-btn" data-category="desserts">Desserts</button>
+                <button class="category-btn" data-category="beverages">Beverages</button>
+                <button class="category-btn" data-category="food">Food</button>
+            </div>
+
+            <!-- Menu Items Grid -->
+            <div class="menu-grid">
+                <!-- Shakes -->
+                <div class="menu-item" data-category="shakes" data-index="1">
+                    <div class="menu-item-image">
+                        <div class="placeholder-image">🥤</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Chocolate Thick Shake</h3>
+                        <span class="badge">Signature</span>
+                    </div>
+                    <div class="menu-item-hover">
+                        <h3>Chocolate Thick Shake</h3>
+                        <p>Rich Belgian chocolate blended with creamy ice cream and topped with whipped cream and chocolate chips</p>
+                        <div class="hover-price">₹180</div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="shakes" data-index="2">
+                    <div class="menu-item-image">
+                        <div class="placeholder-image">🥤</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Oreo Thick Shake</h3>
+                        <span class="badge">Popular</span>
+                    </div>
+                    <div class="menu-item-hover">
+                        <h3>Oreo Thick Shake</h3>
+                        <p>Crushed Oreo cookies blended with vanilla ice cream, topped with cookie crumbs</p>
+                        <div class="hover-price">₹200</div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="shakes" data-index="3">
+                    <div class="menu-item-image">
+                        <div class="placeholder-image">🍓</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Strawberry Thick Shake</h3>
+                    </div>
+                    <div class="menu-item-hover">
+                        <h3>Strawberry Thick Shake</h3>
+                        <p>Fresh strawberries blended with vanilla ice cream and strawberry syrup</p>
+                        <div class="hover-price">₹190</div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="shakes" data-index="4">
+                    <div class="menu-item-image">
+                        <div class="placeholder-image">🥭</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Mango Thick Shake</h3>
+                    </div>
+                    <div class="menu-item-hover">
+                        <h3>Mango Thick Shake</h3>
+                        <p>Seasonal Alfonso mango pulp blended to perfection</p>
+                        <div class="hover-price">₹195</div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="shakes" data-index="5">
+                    <div class="menu-item-image">
+                        <div class="placeholder-image">🥛</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Vanilla Milkshake</h3>
+                    </div>
+                    <div class="menu-item-hover">
+                        <h3>Classic Vanilla Milkshake</h3>
+                        <p>Traditional milkshake made with premium vanilla ice cream</p>
+                        <div class="hover-price">₹150</div>
+                    </div>
+                </div>
+
+                <!-- Desserts -->
+                <div class="menu-item" data-category="desserts" data-index="1">
+                    <div class="menu-item-image">
+                        <div class="placeholder-image">🍫</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Chocolate Brownie</h3>
+                        <span class="badge">Bestseller</span>
+                    </div>
+                    <div class="menu-item-hover">
+                        <h3>Fudgy Chocolate Brownie</h3>
+                        <p>Warm, gooey chocolate brownie served with vanilla ice cream and hot chocolate sauce</p>
+                        <div class="hover-price">₹120</div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="desserts" data-index="2">
+                    <div class="menu-item-image">
+                        <div class="placeholder-image">🍨</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Brownie Sundae</h3>
+                    </div>
+                    <div class="menu-item-hover">
+                        <h3>Brownie Sundae</h3>
+                        <p>Brownie topped with ice cream, nuts, cherry, and drizzled with chocolate sauce</p>
+                        <div class="hover-price">₹160</div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="desserts" data-index="3">
+                    <div class="menu-item-image">
+                        <div class="placeholder-image">🍦</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Ice Cream Scoop</h3>
+                    </div>
+                    <div class="menu-item-hover">
+                        <h3>Ice Cream Scoop</h3>
+                        <p>Choose from Vanilla, Chocolate, Strawberry, Butterscotch, or Mango flavors</p>
+                        <div class="hover-price">₹80</div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="desserts" data-index="4">
+                    <div class="menu-item-image">
+                        <div class="placeholder-image">🍧</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Ice Cream Sundae</h3>
+                    </div>
+                    <div class="menu-item-hover">
+                        <h3>Ice Cream Sundae</h3>
+                        <p>Three scoops with hot fudge, nuts, whipped cream, and cherry on top</p>
+                        <div class="hover-price">₹200</div>
+                    </div>
+                </div>
+
+                <!-- Beverages -->
+                <div class="menu-item" data-category="beverages" data-index="1">
+                    <div class="menu-item-image">
+                        <div class="placeholder-image">🍹</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Blue Lagoon</h3>
+                    </div>
+                    <div class="menu-item-hover">
+                        <h3>Blue Lagoon Mocktail</h3>
+                        <p>Refreshing blue curacao mocktail with lemon and soda</p>
+                        <div class="hover-price">₹140</div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="beverages" data-index="2">
+                    <div class="menu-item-image">
+                        <div class="placeholder-image">🍸</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Virgin Mojito</h3>
+                        <span class="badge">Refreshing</span>
+                    </div>
+                    <div class="menu-item-hover">
+                        <h3>Virgin Mojito</h3>
+                        <p>Fresh mint, lime, sugar, and soda water - the perfect cooler</p>
+                        <div class="hover-price">₹130</div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="beverages" data-index="3">
+                    <div class="menu-item-image">
+                        <div class="placeholder-image">🥥</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Tropical Paradise</h3>
+                    </div>
+                    <div class="menu-item-hover">
+                        <h3>Tropical Paradise</h3>
+                        <p>Pineapple, orange, and passion fruit blend with a splash of grenadine</p>
+                        <div class="hover-price">₹150</div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="beverages" data-index="4">
+                    <div class="menu-item-image">
+                        <div class="placeholder-image">☕</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Cold Coffee</h3>
+                    </div>
+                    <div class="menu-item-hover">
+                        <h3>Cold Coffee</h3>
+                        <p>Rich coffee blended with ice cream and topped with whipped cream</p>
+                        <div class="hover-price">₹120</div>
+                    </div>
+                </div>
+
+                <!-- Food -->
+                <div class="menu-item" data-category="food" data-index="1">
+                    <div class="menu-item-image">
+                        <div class="placeholder-image">🍔</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Veg Burger</h3>
+                        <span class="badge">Bestseller</span>
+                    </div>
+                    <div class="menu-item-hover">
+                        <h3>Classic Veg Burger</h3>
+                        <p>Crispy veg patty with lettuce, tomato, onion, and our special sauce</p>
+                        <div class="hover-price">₹130</div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="food" data-index="2">
+                    <div class="menu-item-image">
+                        <div class="placeholder-image">🍔</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Cheese Burst Burger</h3>
+                    </div>
+                    <div class="menu-item-hover">
+                        <h3>Cheese Burst Burger</h3>
+                        <p>Double patty burger loaded with melted cheese and fresh veggies</p>
+                        <div class="hover-price">₹180</div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="food" data-index="3">
+                    <div class="menu-item-image">
+                        <div class="placeholder-image">🥪</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Paneer Tikka Sandwich</h3>
+                    </div>
+                    <div class="menu-item-hover">
+                        <h3>Paneer Tikka Sandwich</h3>
+                        <p>Grilled sandwich with marinated paneer tikka, peppers, and mint chutney</p>
+                        <div class="hover-price">₹150</div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="food" data-index="4">
+                    <div class="menu-item-image">
+                        <div class="placeholder-image">🥪</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Club Sandwich</h3>
+                    </div>
+                    <div class="menu-item-hover">
+                        <h3>Club Sandwich</h3>
+                        <p>Triple-decker with vegetables, cheese, and special mayo</p>
+                        <div class="hover-price">₹160</div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="food" data-index="5">
+                    <div class="menu-item-image">
+                        <div class="placeholder-image">🍟</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Peri Peri Fries</h3>
+                    </div>
+                    <div class="menu-item-hover">
+                        <h3>Peri Peri Fries</h3>
+                        <p>Crispy fries tossed in spicy peri peri seasoning</p>
+                        <div class="hover-price">₹100</div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="food" data-index="6">
+                    <div class="menu-item-image">
+                        <div class="placeholder-image">🍟</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Cheese Loaded Fries</h3>
+                    </div>
+                    <div class="menu-item-hover">
+                        <h3>Cheese Loaded Fries</h3>
+                        <p>Golden fries smothered in melted cheese sauce</p>
+                        <div class="hover-price">₹130</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- See More Button -->
+            <div class="menu-actions">
+                <button class="btn btn-primary" id="seeMoreBtn">
+                    <span class="btn-text">See More Items</span>
+                    <span class="item-count"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Announcements Section -->
+    <section id="announcements" class="announcements">
+        <div class="container">
+            <div class="section-header">
+                <h2>Latest News & Announcements</h2>
+                <div class="underline"></div>
+                <p class="section-subtitle">Stay updated with our latest offers and events</p>
+            </div>
+            
+            <div class="announcements-grid">
+                <div class="announcement-card highlight" data-announcement-index="1">
+                    <div class="announcement-badge">New</div>
+                    <div class="announcement-icon">🎉</div>
+                    <h3>Grand Opening Offer!</h3>
+                    <p>Get 20% off on all menu items this weekend. Don't miss out on this amazing deal!</p>
+                    <span class="announcement-date">Valid: Nov 15-17, 2025</span>
+                </div>
+                
+                <div class="announcement-card" data-announcement-index="2">
+                    <div class="announcement-icon">🎂</div>
+                    <h3>Birthday Special Package</h3>
+                    <p>Book your birthday party this month and get a complimentary cake and decoration!</p>
+                    <span class="announcement-date">Offer ends: Nov 30, 2025</span>
+                </div>
+                
+                <div class="announcement-card" data-announcement-index="3">
+                    <div class="announcement-icon">⏰</div>
+                    <h3>Happy Hours Extended</h3>
+                    <p>Now enjoy happy hours from 4 PM to 7 PM. Get 1+1 on selected beverages!</p>
+                    <span class="announcement-date">Starting: Nov 20, 2025</span>
+                </div>
+                
+                <div class="announcement-card" data-announcement-index="4">
+                    <div class="announcement-icon">🎵</div>
+                    <h3>Live Music Nights</h3>
+                    <p>Join us every Friday evening for live acoustic performances while you dine!</p>
+                    <span class="announcement-date">Every Friday, 7 PM onwards</span>
+                </div>
+            </div>
+            
+            <!-- See More Button for Announcements -->
+            <div class="announcements-actions">
+                <button class="btn btn-primary" id="seeMoreAnnouncementsBtn" style="display: none;">
+                    <span class="btn-text">See More News</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Memories Section -->
+    <section id="events" class="event-memories">
+        <div class="container">
+            <div class="section-header">
+                <h2>Event Memories</h2>
+                <div class="underline"></div>
+                <p class="section-subtitle">Glimpses from our amazing celebrations</p>
+            </div>
+            
+            <div class="masonry-gallery">
+                <div class="gallery-item" data-type="image" data-size="large">
+                    <div class="gallery-placeholder">
+                        <div class="placeholder-icon">📸</div>
+                        <p>Birthday Celebration</p>
+                    </div>
+                    <div class="gallery-info">
+                        <h4>Birthday Party</h4>
+                        <p>A memorable 21st birthday celebration</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-type="video" data-size="medium">
+                    <div class="gallery-placeholder">
+                        <div class="placeholder-icon">🎥</div>
+                        <p>Engagement Video</p>
+                    </div>
+                    <div class="video-badge">▶</div>
+                    <div class="gallery-info">
+                        <h4>Engagement Ceremony</h4>
+                        <p>Beautiful engagement celebration</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-type="image" data-size="small">
+                    <div class="gallery-placeholder">
+                        <div class="placeholder-icon">📸</div>
+                        <p>Friends Gathering</p>
+                    </div>
+                    <div class="gallery-info">
+                        <h4>Friends Reunion</h4>
+                        <p>Fun times with friends</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-type="image" data-size="medium">
+                    <div class="gallery-placeholder">
+                        <div class="placeholder-icon">📸</div>
+                        <p>Anniversary Party</p>
+                    </div>
+                    <div class="gallery-info">
+                        <h4>Anniversary Celebration</h4>
+                        <p>Beautiful anniversary dinner</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-type="image" data-size="small">
+                    <div class="gallery-placeholder">
+                        <div class="placeholder-icon">📸</div>
+                        <p>Decor Setup</p>
+                    </div>
+                    <div class="gallery-info">
+                        <h4>Event Decoration</h4>
+                        <p>Beautiful themed decorations</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-type="video" data-size="large">
+                    <div class="gallery-placeholder">
+                        <div class="placeholder-icon">🎥</div>
+                        <p>Birthday Video</p>
+                    </div>
+                    <div class="video-badge">▶</div>
+                    <div class="gallery-info">
+                        <h4>Surprise Birthday</h4>
+                        <p>Heartwarming surprise party</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-type="image" data-size="medium">
+                    <div class="gallery-placeholder">
+                        <div class="placeholder-icon">📸</div>
+                        <p>Corporate Event</p>
+                    </div>
+                    <div class="gallery-info">
+                        <h4>Team Party</h4>
+                        <p>Corporate celebration</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-type="image" data-size="small">
+                    <div class="gallery-placeholder">
+                        <div class="placeholder-icon">📸</div>
+                        <p>Cake Cutting</p>
+                    </div>
+                    <div class="gallery-info">
+                        <h4>Cake Moments</h4>
+                        <p>Special cake cutting ceremony</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-type="image" data-size="medium">
+                    <div class="gallery-placeholder">
+                        <div class="placeholder-icon">📸</div>
+                        <p>Group Photo</p>
+                    </div>
+                    <div class="gallery-info">
+                        <h4>Happy Moments</h4>
+                        <p>Group celebration at cafe</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gallery-note">
+                <p>📷 Click on any image or video to view in full screen</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Modal/Lightbox -->
+    <div id="galleryModal" class="gallery-modal">
+        <span class="modal-close">&times;</span>
+        <div class="modal-content-wrapper">
+            <div class="modal-media">
+                <div class="modal-placeholder">
+                    <div class="placeholder-icon">📸</div>
+                </div>
+            </div>
+            <div class="modal-info">
+                <h3 id="modalTitle">Title</h3>
+                <p id="modalDescription">Description</p>
+            </div>
+        </div>
+        <button class="modal-nav modal-prev">‹</button>
+        <button class="modal-nav modal-next">›</button>
+    </div>
+
+    <!-- Event Packages Section -->
+    <section class="event-packages">
+        <div class="container">
+            <div class="section-header">
+                <h2>Event Packages & Rental</h2>
+                <div class="underline"></div>
+                <p class="section-subtitle">Make your special moments unforgettable at Cafe O'Clock</p>
+            </div>
+            
+            <div class="packages-grid">
+                <!-- Birthday Package -->
+                <div class="package-card featured">
+                    <div class="package-badge">Most Popular</div>
+                    <div class="package-card-inner">
+                        <!-- Front of Card -->
+                        <div class="package-card-front">
+                            <div class="package-icon">🎂</div>
+                            <h3>Birthday Party Package</h3>
+                            <div class="package-price">
+                                <span class="price">₹8,999</span>
+                                <span class="price-note">for up to 15 guests</span>
+                            </div>
+                            <p class="flip-hint">Hover to see details</p>
+                        </div>
+                        <!-- Back of Card -->
+                        <div class="package-card-back">
+                            <h3>Included Features</h3>
+                            <ul class="package-features">
+                                <li>✓ Venue decoration with balloons & banners</li>
+                                <li>✓ 1 kg customized birthday cake</li>
+                                <li>✓ Party poppers & party hats</li>
+                                <li>✓ Music system & DJ setup</li>
+                                <li>✓ 3 hours venue booking</li>
+                                <li>✓ Food & beverages (₹400 per person)</li>
+                                <li>✓ Dedicated service staff</li>
+                                <li>✓ Photography session (50 photos)</li>
+                            </ul>
+                            <button class="btn btn-primary package-btn">Book Now</button>
+                            <p class="extra-guest">Additional guests: ₹400 per person</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Engagement Package -->
+                <div class="package-card">
+                    <div class="package-card-inner">
+                        <!-- Front of Card -->
+                        <div class="package-card-front">
+                            <div class="package-icon">💍</div>
+                            <h3>Engagement Party Package</h3>
+                            <div class="package-price">
+                                <span class="price">₹15,999</span>
+                                <span class="price-note">for up to 25 guests</span>
+                            </div>
+                            <p class="flip-hint">Hover to see details</p>
+                        </div>
+                        <!-- Back of Card -->
+                        <div class="package-card-back">
+                            <h3>Included Features</h3>
+                            <ul class="package-features">
+                                <li>✓ Elegant venue decoration</li>
+                                <li>✓ Floral arrangements</li>
+                                <li>✓ Welcome drinks for all guests</li>
+                                <li>✓ Custom engagement cake</li>
+                                <li>✓ 4 hours venue booking</li>
+                                <li>✓ Premium food menu (₹600 per person)</li>
+                                <li>✓ Professional photography (100 photos)</li>
+                                <li>✓ Music & lighting setup</li>
+                            </ul>
+                            <button class="btn btn-primary package-btn">Book Now</button>
+                            <p class="extra-guest">Additional guests: ₹600 per person</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Custom Package -->
+                <div class="package-card">
+                    <div class="package-card-inner">
+                        <!-- Front of Card -->
+                        <div class="package-card-front">
+                            <div class="package-icon">🎉</div>
+                            <h3>Custom Event Package</h3>
+                            <div class="package-price">
+                                <span class="price">Starting at ₹5,999</span>
+                                <span class="price-note">customizable based on needs</span>
+                            </div>
+                            <p class="flip-hint">Hover to see details</p>
+                        </div>
+                        <!-- Back of Card -->
+                        <div class="package-card-back">
+                            <h3>Included Features</h3>
+                            <ul class="package-features">
+                                <li>✓ Flexible decoration options</li>
+                                <li>✓ Customized menu selection</li>
+                                <li>✓ Duration: 2-6 hours</li>
+                                <li>✓ Suitable for: Anniversaries, Reunions</li>
+                                <li>✓ Corporate events, Kitty parties</li>
+                                <li>✓ Baby showers, Farewell parties</li>
+                                <li>✓ Optional add-ons available</li>
+                                <li>✓ Dedicated event coordinator</li>
+                            </ul>
+                            <button class="btn btn-primary package-btn">Contact Us</button>
+                            <p class="extra-guest">Pricing varies by requirements</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Info Button with Modal -->
+            <div style="text-align: center; margin-top: 30px;">
+                <button class="btn btn-secondary" id="packageInfoBtn">📋 Important Booking Information</button>
+            </div>
+            
+            <!-- Info Modal -->
+            <div id="packageInfoModal" class="package-info-modal" style="display: none;">
+                <div class="modal-content-box">
+                    <span class="modal-close-btn">&times;</span>
+                    <h3>Important Information</h3>
+                    <ul class="info-list">
+                        <li>• Advance booking required (minimum 7 days)</li>
+                        <li>• 30% advance payment to confirm booking</li>
+                        <li>• Full refund if cancelled 5 days prior</li>
+                        <li>• Customization available on all packages</li>
+                        <li>• Outside food & beverages not allowed</li>
+                        <li>• Contact us for detailed menu options</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <div class="container">
+            <h2>Visit Us Today!</h2>
+            <p>Experience the perfect blend of taste, quality, and ambiance</p>
+            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Find Us</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <h3>Location</h3>
+                        <p>Visit us at Cafe O'Clock</p>
+                        <a href="https://maps.app.goo.gl/fiv6P6NPjMUucVsB8" target="_blank" class="btn btn-primary" style="margin-top: 15px; padding: 10px 25px; font-size: 0.85rem;">
+                            Get Directions
+                        </a>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">⏰</div>
+                        <h3>Hours</h3>
+                        <p>Open Daily<br>12:00 PM - 12:00 AM</p>
+                        <p style="font-size: 0.85rem; color: var(--text-light); margin-top: 5px;">(Noon to Midnight)</p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <h3>Contact</h3>
+                        <p>Phone: <a href="tel:+919173515648" style="color: var(--primary-color); text-decoration: none;">+91 91735 15648</a></p>
+                        <p style="margin-top: 10px;">Instagram: <a href="https://instagram.com/cafe_oclock_" target="_blank" style="color: var(--primary-color); text-decoration: none; font-weight: 600;">@cafe_oclock_</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Cafe O'Clock</h3>
+                    <p>Your perfect break, anytime!</p>
+                    <p style="margin-top: 10px; font-size: 0.9rem;">📧 <a href="mailto:cafeoclock2625@gmail.com" style="color: var(--primary-color); text-decoration: none;">cafeoclock2625@gmail.com</a></p>
+                    <p style="margin-top: 5px; font-size: 0.9rem;">⏰ Open Daily: 12 PM - 12 AM</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#events">Events</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <p style="font-size: 0.95rem; margin-bottom: 20px; opacity: 0.9; line-height: 1.6;">Follow us on social media for updates, offers, and more!</p>
+                    <div class="social-links">
+                        <a href="https://instagram.com/cafe_oclock_" target="_blank" class="social-icon social-icon-instagram" title="Follow us on Instagram">
+                            <svg width="34" height="34" viewBox="0 0 24 24" fill="#fff">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="tel:+919173515648" class="social-icon social-icon-phone" title="Call Us Now">
+                            <svg width="34" height="34" viewBox="0 0 24 24" fill="#fff">
+                                <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+                            </svg>
+                        </a>
+                        <a href="https://wa.me/919173515648" target="_blank" class="social-icon social-icon-whatsapp" title="Chat on WhatsApp">
+                            <svg width="34" height="34" viewBox="0 0 24 24" fill="#fff">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div style="margin-top: 20px; padding-top: 20px; border-top: 1px solid rgba(212, 163, 115, 0.3);">
+                        <p style="font-size: 1rem; font-weight: 600; color: var(--primary-color); margin-bottom: 5px;">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: middle; margin-right: 8px;">
+                                <path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/>
+                            </svg>
+                            @cafe_oclock_
+                        </p>
+                        <p style="font-size: 0.85rem; opacity: 0.7; font-style: italic;">Tag us in your photos!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Cafe O'Clock. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
