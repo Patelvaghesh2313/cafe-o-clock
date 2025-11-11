@@ -11,15 +11,21 @@ const seeMoreBtn = document.getElementById('seeMoreBtn');
 // ============================================
 // Menu Visibility Variables
 // ============================================
-const ITEMS_PER_PAGE = 6; // Show 6 items initially and load 6 more each time
+const ITEMS_PER_PAGE = 12; // Show 12 items initially and load 12 more each time
 let currentVisibleCount = ITEMS_PER_PAGE;
 let allExpanded = false;
 
 // Function to update menu visibility
 function updateMenuVisibility() {
     const activeCategory = document.querySelector('.category-btn.active').getAttribute('data-category');
-    let relevantItems;
     
+    // First, hide ALL menu items
+    menuItems.forEach(item => {
+        item.style.display = 'none';
+    });
+    
+    // Filter relevant items based on category
+    let relevantItems;
     if (activeCategory === 'all') {
         relevantItems = Array.from(menuItems);
     } else {
@@ -30,12 +36,12 @@ function updateMenuVisibility() {
     
     const totalItems = relevantItems.length;
     
-    // Show/hide items based on currentVisibleCount
+    // Show only the relevant items based on currentVisibleCount
     relevantItems.forEach((item, index) => {
         if (index < currentVisibleCount) {
             item.style.display = 'flex';
-        } else {
-            item.style.display = 'none';
+            item.style.opacity = '1';
+            item.style.transform = 'translateY(0)';
         }
     });
     
@@ -56,7 +62,7 @@ function updateMenuVisibility() {
         allExpanded = false;
     }
     
-    // Hide button if there are 6 or fewer items total
+    // Hide button if there are 12 or fewer items total
     if (totalItems <= ITEMS_PER_PAGE) {
         seeMoreBtn.style.display = 'none';
     } else {
@@ -130,58 +136,12 @@ categoryBtns.forEach(btn => {
         currentVisibleCount = ITEMS_PER_PAGE;
         allExpanded = false;
         
-        // Get filter category
-        const filterValue = btn.getAttribute('data-category');
-        
-        // Filter menu items
-        menuItems.forEach(item => {
-            // Add fade out animation
-            item.style.opacity = '0';
-            item.style.transform = 'scale(0.8)';
-            
-            setTimeout(() => {
-                if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
-                    item.style.display = 'flex';
-                    setTimeout(() => {
-                        item.style.opacity = '1';
-                        item.style.transform = 'scale(1)';
-                    }, 50);
-                } else {
-                    item.style.display = 'none';
-                }
-            }, 300);
-        });
-        
-        // Update "See More" button visibility and text after filter animation
-        setTimeout(() => {
-            updateMenuVisibility();
-        }, 350);
+        // Update menu visibility immediately with new filter
+        updateMenuVisibility();
     });
 });
 
-// Add transition property to menu items
-menuItems.forEach(item => {
-    item.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
-});
-
-// Mobile touch support for menu items
-menuItems.forEach(item => {
-    item.addEventListener('click', function(e) {
-        // Only on mobile/touch devices
-        if (window.innerWidth <= 768 || 'ontouchstart' in window) {
-            const hoverOverlay = this.querySelector('.menu-item-hover');
-            
-            // Toggle active class
-            if (this.classList.contains('active-touch')) {
-                this.classList.remove('active-touch');
-            } else {
-                // Remove active from all other items
-                menuItems.forEach(i => i.classList.remove('active-touch'));
-                this.classList.add('active-touch');
-            }
-        }
-    });
-});
+// Mobile no longer needs click handlers - prices are shown directly on cards
 
 // ============================================
 // Smooth Scrolling for Navigation Links
